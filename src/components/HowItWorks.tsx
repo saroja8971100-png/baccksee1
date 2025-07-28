@@ -100,53 +100,55 @@ const HowItWorks = () => {
 
                 {/* Desktop Layout */}
                 <div className="hidden lg:block">
-                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? 'lg:grid-flow-col-dense' : ''}`}>
-                    
-                    {/* Content Side */}
-                    <div className={`space-y-8 ${isEven ? 'lg:col-start-2' : ''}`}>
-                      {/* Step Number */}
-                      <div className="flex items-center space-x-4">
-                        <div className="flex items-center justify-center w-20 h-20 bg-pink-bright text-white rounded-full text-3xl font-bold">
-                          {stepItem.step}
-                        </div>
-                        <div className="text-lg font-medium text-muted-foreground">
-                          STEP {stepItem.step}
-                        </div>
-                      </div>
+                  <div className="max-w-6xl mx-auto">
+                    <div className={`grid lg:grid-cols-2 gap-16 items-stretch ${isEven ? 'lg:grid-flow-col-dense' : ''}`}>
                       
-                      {/* Content Card */}
-                      <div className="bg-card rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 max-w-xl">
-                        <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-8">
-                          <div className="text-primary">
-                            {stepItem.icon}
+                      {/* Content Side */}
+                      <div className={`flex flex-col justify-center space-y-6 ${isEven ? 'lg:col-start-2' : ''}`}>
+                        {/* Step Number */}
+                        <div className="flex items-center space-x-4 mb-2">
+                          <div className="flex items-center justify-center w-16 h-16 bg-pink-bright text-white rounded-full text-2xl font-bold">
+                            {stepItem.step}
+                          </div>
+                          <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+                            STEP {stepItem.step}
                           </div>
                         </div>
                         
-                        <h3 className="text-3xl font-bold text-foreground mb-6">
-                          {stepItem.title}
-                        </h3>
-                        
-                        <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-                          {stepItem.description}
-                        </p>
-                        
-                        <div className="bg-pink-bright/10 text-pink-bright px-6 py-3 rounded-full text-base font-medium inline-block">
-                          {stepItem.highlight}
+                        {/* Content Card */}
+                        <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50">
+                          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                            <div className="text-primary">
+                              {stepItem.icon}
+                            </div>
+                          </div>
+                          
+                          <h3 className="text-2xl font-bold text-foreground mb-4 leading-tight">
+                            {stepItem.title}
+                          </h3>
+                          
+                          <p className="text-muted-foreground mb-6 leading-relaxed">
+                            {stepItem.description}
+                          </p>
+                          
+                          <div className="bg-pink-bright/10 text-pink-bright px-4 py-2 rounded-full text-sm font-medium inline-block">
+                            {stepItem.highlight}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    
-                    {/* Image Side */}
-                    <div className={`${isEven ? 'lg:col-start-1' : ''}`}>
-                      <div className="rounded-2xl overflow-hidden shadow-2xl bg-white/50 backdrop-blur-sm border border-white/20 h-[500px]">
-                        <img 
-                          src={stepImages[index]} 
-                          alt={`Step ${stepItem.step}: ${stepItem.title}`}
-                          className="w-full h-full object-contain bg-gradient-to-br from-white to-gray-50 hover:scale-105 transition-all duration-500"
-                        />
+                      
+                      {/* Image Side */}
+                      <div className={`flex items-center ${isEven ? 'lg:col-start-1' : ''}`}>
+                        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-white/50 backdrop-blur-sm border border-white/20 aspect-square">
+                          <img 
+                            src={stepImages[index]} 
+                            alt={`Step ${stepItem.step}: ${stepItem.title}`}
+                            className="w-full h-full object-contain bg-gradient-to-br from-white to-gray-50 hover:scale-105 transition-all duration-500 p-4"
+                          />
+                        </div>
                       </div>
+                      
                     </div>
-                    
                   </div>
                 </div>
                 
