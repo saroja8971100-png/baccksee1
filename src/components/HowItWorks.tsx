@@ -89,11 +89,11 @@ const HowItWorks = () => {
                   </div>
                   
                   {/* Step Image */}
-                  <div className="rounded-2xl overflow-hidden shadow-xl bg-white/50 backdrop-blur-sm border border-white/20">
+                  <div className="rounded-2xl overflow-hidden shadow-xl bg-secondary border border-border/20">
                     <img 
                       src={stepImages[index]} 
                       alt={`Step ${stepItem.step}: ${stepItem.title}`}
-                      className="w-full h-80 object-contain bg-gradient-to-br from-white to-gray-50 hover:scale-105 transition-all duration-500 opacity-95 hover:opacity-100"
+                      className="w-full h-80 object-contain bg-secondary hover:scale-105 transition-all duration-500 opacity-95 hover:opacity-100"
                     />
                   </div>
                 </div>
@@ -139,11 +139,11 @@ const HowItWorks = () => {
                       
                       {/* Image Side */}
                       <div className={`flex items-center ${isEven ? 'lg:col-start-1' : ''}`}>
-                        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-white/50 backdrop-blur-sm border border-white/20 aspect-square">
+                        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-secondary border border-border/20 aspect-square">
                           <img 
                             src={stepImages[index]} 
                             alt={`Step ${stepItem.step}: ${stepItem.title}`}
-                            className="w-full h-full object-contain bg-gradient-to-br from-white to-gray-50 hover:scale-105 transition-all duration-500 p-4"
+                            className="w-full h-full object-contain bg-secondary hover:scale-105 transition-all duration-500 p-4"
                           />
                         </div>
                       </div>
