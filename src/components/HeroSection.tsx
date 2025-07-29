@@ -61,36 +61,36 @@ const HeroSection = () => {
           {/* Right Column - Image Gallery */}
           <div className="relative">
             {/* Main large image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-4">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-2">
               <img 
                 src="/lovable-uploads/033afee6-820c-4af4-86f4-27d43c80ba50.png" 
                 alt="Professional delivery service" 
-                className="w-full h-80 object-cover" 
+                className="w-full h-80 object-contain bg-secondary" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
             </div>
             
             {/* Secondary images grid */}
-            <div className="grid grid-cols-3 gap-3">
-              <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="grid grid-cols-3">
+              <div className="rounded-none overflow-hidden shadow-lg">
                 <img 
                   src="/lovable-uploads/fc504a2c-a614-47b9-ac8e-e4ac0369aa29.png" 
                   alt="Package handover" 
-                  className="w-full h-24 object-cover hover:scale-105 transition-transform duration-300" 
+                  className="w-full h-32 object-contain bg-secondary hover:scale-105 transition-transform duration-300" 
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="rounded-none overflow-hidden shadow-lg">
                 <img 
                   src="/lovable-uploads/d1933ebf-1418-416f-9036-8900d40feb62.png" 
                   alt="Package processing" 
-                  className="w-full h-24 object-cover hover:scale-105 transition-transform duration-300" 
+                  className="w-full h-32 object-contain bg-secondary hover:scale-105 transition-transform duration-300" 
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="rounded-none overflow-hidden shadow-lg">
                 <img 
                   src="/lovable-uploads/604dcfdd-09cb-46e5-8710-3183c5fc8a8d.png" 
                   alt="Doorstep delivery" 
-                  className="w-full h-24 object-cover hover:scale-105 transition-transform duration-300" 
+                  className="w-full h-32 object-contain bg-secondary hover:scale-105 transition-transform duration-300" 
                 />
               </div>
             </div>
