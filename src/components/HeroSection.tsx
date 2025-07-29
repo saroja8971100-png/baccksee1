@@ -7,6 +7,7 @@ const scrollToSection = (sectionId: string) => {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+const heroImage = "/lovable-uploads/4a76c6ae-fa1d-4973-81a9-d884b6f8ad9c.png";
 const HeroSection = () => {
   return <section className="min-h-screen bg-gradient-to-br from-secondary to-background flex items-center">
       <div className="container mx-auto px-4 py-20">
@@ -58,45 +59,16 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Column - Image Gallery */}
+          {/* Right Column - Hero Image */}
           <div className="relative">
-            {/* Main large image */}
-            <div className="relative rounded-xl overflow-hidden shadow-xl mb-1">
-              <img 
-                src="/lovable-uploads/033afee6-820c-4af4-86f4-27d43c80ba50.png" 
-                alt="Professional delivery service" 
-                className="w-full h-48 sm:h-56 lg:h-64 object-contain bg-secondary/50" 
-              />
-            </div>
-            
-            {/* Secondary images grid */}
-            <div className="grid grid-cols-3">
-              <div className="overflow-hidden">
-                <img 
-                  src="/lovable-uploads/fc504a2c-a614-47b9-ac8e-e4ac0369aa29.png" 
-                  alt="Package handover" 
-                  className="w-full h-20 sm:h-24 lg:h-28 object-contain bg-secondary/50 hover:scale-105 transition-transform duration-300" 
-                />
-              </div>
-              <div className="overflow-hidden">
-                <img 
-                  src="/lovable-uploads/d1933ebf-1418-416f-9036-8900d40feb62.png" 
-                  alt="Package processing" 
-                  className="w-full h-20 sm:h-24 lg:h-28 object-contain bg-secondary/50 hover:scale-105 transition-transform duration-300" 
-                />
-              </div>
-              <div className="overflow-hidden">
-                <img 
-                  src="/lovable-uploads/604dcfdd-09cb-46e5-8710-3183c5fc8a8d.png" 
-                  alt="Doorstep delivery" 
-                  className="w-full h-20 sm:h-24 lg:h-28 object-contain bg-secondary/50 hover:scale-105 transition-transform duration-300" 
-                />
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img src={heroImage} alt="Professional delivery service" className="w-full h-auto object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-pink-bright/20 rounded-full blur-xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary/20 rounded-full blur-lg"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-pink-bright/20 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary/20 rounded-full blur-lg"></div>
           </div>
           
         </div>
